@@ -13,8 +13,6 @@ function flakyConnection(): Promise<{ connected: boolean }> {
 }
 
 main(function* (scope: Task) {
-  console.log('in main');
-
   scope.spawn(function* (child) {
     child.spawn(function* () {
       console.log('primed to throw an Error');
