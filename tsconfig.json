@@ -1,0 +1,19 @@
+{
+  "extends": "@cutting/devtools/typescript/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "commonjs"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "../../node_modules",
+    "./dist",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
+  ]
+}
